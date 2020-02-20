@@ -1,0 +1,45 @@
+{
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": {
+                    "resolve": {
+                        "extensions": [".ts", ".tsx", ".json"]
+                    }
+                }
+            }
+        }
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [],
+    "extends": [
+        // eslint core config
+        // https://eslint.org/docs/rules/
+        // https://github.com/eslint/eslint/blob/master/conf/eslint-recommended.js
+        "eslint:recommended",
+        // disables conflicting rules from eslint:recommended
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/eslint-recommended.ts
+        "plugin:@typescript-eslint/eslint-recommended",
+        // react config - enables plugin 'react'
+        // https://github.com/yannickcr/eslint-plugin-react/blob/master/index.js
+        "plugin:react/recommended",
+        // typescript config - enabled plugin '@typescript-eslint'
+        // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.json
+        "plugin:@typescript-eslint/recommended",
+        // CRA config - enables plugins ['import', 'flowtype', 'jsx-a11y', 'react', 'react-hooks', '@typescript-eslint']
+        // https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/index.js
+        "react-app",
+        // prettier style nit overrides from eslint-config-prettier https://github.com/prettier/eslint-config-prettier
+        // this is different from the plugin and does not enforce prettier through eslint, but just turns off potentially conflicting rules
+        "prettier",
+        "prettier/react",
+        "prettier/@typescript-eslint"
+    ]
+}
