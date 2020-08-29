@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import UnstyledLink from "../HelperComponents/UnstyledLink";
 import "typeface-roboto";
 
 export default function MenuBar() {
@@ -23,7 +24,7 @@ export default function MenuBar() {
             <AppBar position="sticky">
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
-                        Olivia Adams
+                        <UnstyledLink to="/">Olivia Adams</UnstyledLink>
                     </Typography>
                     <MenuButtons />
                 </Toolbar>
@@ -35,9 +36,15 @@ export default function MenuBar() {
 export function MenuButtons() {
     return (
         <ButtonGroup aria-label="navigation" color="inherit" variant="text">
-            <Button>Experience</Button>
-            <Button>Posts</Button>
-            <Button>Contact</Button>
+            <Button>
+                <UnstyledLink to="/experience">Experience</UnstyledLink>
+            </Button>
+            <Button>
+                <UnstyledLink to="/posts">Posts</UnstyledLink>
+            </Button>
+            <Button>
+                <UnstyledLink to="/contact">Contact</UnstyledLink>
+            </Button>
         </ButtonGroup>
     );
 }

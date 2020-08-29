@@ -1,26 +1,45 @@
 import React from "react";
-//import logo from "./logo.svg";
-//import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MenuBar from "../MenuBar";
 import Landing from "../Landing";
-import "./App.css";
+import Experience from "../Experience";
 import "typeface-roboto";
+import "./App.css";
+import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 export default function App() {
-    /* const classes = makeStyles((theme: Theme) =>
-        createStyles({
-            root: {
-                flexGrow: 1
+    const theme = createMuiTheme({
+        palette: {
+            primary: {
+                main: "#ac3b61",
             },
-            title: {
-                flexGrow: 1
-            }
-        })
-    )(); */
+            secondary: {
+                main: "#123c69",
+            },
+            background: {
+                default: "#eee2dc",
+            },
+        },
+    });
     return (
-        <>
-            <MenuBar />
-            <Landing />
-        </>
+        <ThemeProvider theme={theme}>
+            <Router>
+                <MenuBar />
+                <Switch>
+                    <Route exact path="/">
+                        <Landing />
+                    </Route>
+                    <Route path="/experience">
+                        <Experience />
+                    </Route>
+                    <Route path="/posts">
+                        <div>posts WIP</div>
+                    </Route>
+                    <Route path="/contact">
+                        <div>contact WIP</div>
+                    </Route>
+                </Switch>
+            </Router>
+        </ThemeProvider>
     );
 }
