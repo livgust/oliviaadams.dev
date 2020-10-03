@@ -10,7 +10,9 @@ export default function Landing() {
                 alignItems: "center",
                 "& img": {
                     width: "100%",
+                    borderRadius: "50%",
                 },
+                margin: "-24px",
             },
             bio: {
                 padding: "10% !important",

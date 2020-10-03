@@ -39,9 +39,9 @@ export function MenuButtons() {
             <Button>
                 <UnstyledLink to="/experience">Experience</UnstyledLink>
             </Button>
-            <Button>
+            {/* <Button>
                 <UnstyledLink to="/posts">Posts</UnstyledLink>
-            </Button>
+            </Button> */}
             <Button>
                 <UnstyledLink to="/contact">Contact</UnstyledLink>
             </Button>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MenuBar from "../MenuBar";
 import Landing from "../Landing";
 import Experience from "../Experience";
+import Contact from "../Contact";
 import "typeface-roboto";
 import "./App.css";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
@@ -32,11 +33,11 @@ export default function App() {
                     <Route path="/experience">
                         <Experience />
                     </Route>
-                    <Route path="/posts">
+                    {/* <Route path="/posts">
                         <div>posts WIP</div>
-                    </Route>
+                    </Route> */}
                     <Route path="/contact">
-                        <div>contact WIP</div>
+                        <Contact />
                     </Route>
                 </Switch>
             </Router>
