@@ -34,16 +34,123 @@ export default function Experience() {
     return (
         <VerticalTimeline layout="1-column">
             <VerticalTimelineElement
-                date="Feb 2018 - present"
+                date="Feb 2021 - present"
                 {...workIconProps}
             >
-                <h3>Lead Member of Technical Staff</h3>
+                <h3>Owner</h3>
+                <h4>Ora Innovations, LLC</h4>
+                <h5>
+                    <a
+                        href="https://macovidvaccines.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        macovidvaccines.com
+                    </a>
+                </h5>
+                <p>
+                    Created{" "}
+                    <a
+                        href="https://macovidvaccines.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        macovidvaccines.com
+                    </a>
+                    , aggregating COVID vaccine availability across
+                    Massachusetts in real time.
+                    <br />
+                    Gained{" "}
+                    <a
+                        href="https://www.bostonglobe.com/2021/02/05/business/this-software-developer-is-building-better-website-find-vaccination-slots-than-state/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        local
+                    </a>{" "}
+                    and{" "}
+                    <a
+                        href="https://www.cnn.com/2021/02/08/us/olivia-adams-ma-covid-vaccine-website-trnd/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        national
+                    </a>{" "}
+                    media attention.
+                    <br />
+                    Implemented text message alert subscriptions using Fauna DB
+                    and AWS Pinpoint.
+                    <br />
+                    Crowdsourced funding to ensure coverage of operational
+                    expenses and hired help
+                    <br />
+                    Organized volunteer group of over 20 developers and
+                    designers
+                    <br />
+                    Technologies used:
+                    <ul>
+                        <li>node.js</li>
+                        <li>React</li>
+                        <li>Fauna DB</li>
+                        <li>AWS SAM/Amplify/Lambda/S3/Pinpoint</li>
+                        <li>Git</li>
+                    </ul>
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                date="Aug 2021 - present"
+                {...workIconProps}
+            >
+                <h3>Principal Developer</h3>
+                <h4>athenahealth, Inc.</h4>
+                <p>
+                    Creating architectures, soliciting feedback from Architect,
+                    and gathering feedback from team members
+                    <br />
+                    Championing Gender-Affirming Care Codefest to close known
+                    gaps in the care of transgender and non-binary patients
+                    <br />
+                    Acting as "security champion" for the division
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                date="Feb 2021 - present"
+                {...workIconProps}
+            >
+                <h3>Volunteer Technical Lead</h3>
+                <h4>MA Covid Vaccination Help</h4>
+                <p>
+                    <a
+                        href="https://macovidvaxhelp.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        MA Covid Vaccination Help
+                    </a>{" "}
+                    has organized volunteers to book COVID-19 vaccine
+                    appointments for thousands of underprivileged and
+                    under-resourced residents accross Massachusetts. As
+                    technical lead, I organized approximately a dozen developers
+                    to build and maintain our home-grown booking system to keep
+                    track of thousands of residents requesting help assigned to
+                    hundreds of volunteers.
+                    <br />
+                    <br />
+                    Technologies used: React, Python, MySQL, AWS SAM/Amplify,
+                    Squarespace, Twilio Sendgrid, Git
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                date="Feb 2018 - Aug 2021"
+                {...workIconProps}
+            >
+                <h3>Lead Developer</h3>
                 <h4>athenahealth, Inc.</h4>
                 <p>
                     Scrum master of one full-stack team
                     <br />
                     Developer of a new full-stack project built with new
-                    technologies but still integrated in the existing monolithic
+                    technologies but still integrated in the existing legacy
                     architecture
                 </p>
             </VerticalTimelineElement>
@@ -64,10 +171,10 @@ export default function Experience() {
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
-                date="Feb 2017 - Jan 2018"
+                date="Jun 2015 - Jan 2018"
                 {...workIconProps}
             >
-                <h3>Senior Software Developer</h3>
+                <h3>Senior Developer (2017-2018)</h3>
                 <h4>athenahealth, Inc.</h4>
                 <p>
                     Scrum master of one full-stack team
@@ -75,14 +182,8 @@ export default function Experience() {
                     Empowered the team to finish a long-standing project before
                     a tight deadline
                 </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                date="Jun 2015 - Jan 2017"
-                {...workIconProps}
-            >
-                <h3>Software Developer</h3>
+                <h3>Software Developer (2015-2017)</h3>
                 <h4>athenahealth, Inc.</h4>
-                <p>Quick learner of existing technical stack</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement date="Jun 2015" {...schoolIconProps}>
                 <h3>Master of Engineering</h3>
