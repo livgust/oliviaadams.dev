@@ -2,7 +2,7 @@ import React from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Link, LinkProps } from "react-router-dom";
 
-export default function UnstyledLink(props: LinkProps) {
+export default function UnstyledLink(props: LinkProps): JSX.Element {
     const classes = makeStyles((theme: Theme) =>
         createStyles({
             root: {

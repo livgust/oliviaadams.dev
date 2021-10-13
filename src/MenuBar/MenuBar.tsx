@@ -8,7 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import UnstyledLink from "../HelperComponents/UnstyledLink";
 import "typeface-roboto";
 
-export default function MenuBar() {
+export default function MenuBar(): JSX.Element {
     const classes = makeStyles((theme: Theme) =>
         createStyles({
             root: {
@@ -33,7 +33,7 @@ export default function MenuBar() {
     );
 }
 
-export function MenuButtons() {
+export function MenuButtons(): JSX.Element {
     return (
         <ButtonGroup aria-label="navigation" color="inherit" variant="text">
             <Button>

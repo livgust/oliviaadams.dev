@@ -3,7 +3,7 @@ import headshot from "./headshot_cropped.jpg";
 import Grid from "@material-ui/core/Grid";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-export default function Landing() {
+export default function Landing(): JSX.Element {
     const classes = makeStyles((theme: Theme) =>
         createStyles({
             root: {
@@ -27,12 +27,13 @@ export default function Landing() {
             <Grid item sm={8} xs={12} className={classes.bio}>
                 <div>
                     <p>
-                        Hi! I'm Olivia. I’m a full-stack software developer and
-                        engineering manager with a passion for doing and
-                        enabling others to do purposeful work. I’m an outspoken
-                        proponent of Agile methodologies whose communication
-                        skills and upbeat personality encourage others to rally
-                        around great ideas and bring them to fruition.
+                        Hi! I&apos;m Olivia. I&apos;m a full-stack software
+                        developer and engineering manager with a passion for
+                        doing and enabling others to do purposeful work.
+                        I&apos;m an outspoken proponent of Agile methodologies
+                        whose communication skills and upbeat personality
+                        encourage others to rally around great ideas and bring
+                        them to fruition.
                     </p>
                     <p>
                         Please check out my resume, blog posts, or engage with

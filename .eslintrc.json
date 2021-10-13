@@ -38,8 +38,6 @@
         "react-app",
         // prettier style nit overrides from eslint-config-prettier https://github.com/prettier/eslint-config-prettier
         // this is different from the plugin and does not enforce prettier through eslint, but just turns off potentially conflicting rules
-        "prettier",
-        "prettier/react",
-        "prettier/@typescript-eslint"
+        "prettier"
     ]
 }

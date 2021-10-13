@@ -8,7 +8,7 @@ import "typeface-roboto";
 import "./App.css";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-export default function App() {
+export default function App(): JSX.Element {
     const theme = createMuiTheme({
         palette: {
             primary: {

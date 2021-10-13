@@ -26,7 +26,7 @@ function AvatarLink(props: {
     );
 }
 
-export default function Contact() {
+export default function Contact(): JSX.Element {
     const classes = makeStyles((theme: Theme) =>
         createStyles({
             iconList: {

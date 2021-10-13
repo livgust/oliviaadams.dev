@@ -8,7 +8,7 @@ import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import SchoolIcon from "@material-ui/icons/School";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-export default function Experience() {
+export default function Experience(): JSX.Element {
     const classes = makeStyles((theme: Theme) => {
         const white = "#fff";
         return createStyles({
@@ -110,7 +110,7 @@ export default function Experience() {
                     Championing Gender-Affirming Care Codefest to close known
                     gaps in the care of transgender and non-binary patients
                     <br />
-                    Acting as "security champion" for the division
+                    Acting as &quot;security champion&quot; for the division
                 </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
